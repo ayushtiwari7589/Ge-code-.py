@@ -1,0 +1,52 @@
+P9a). WAP to read a file and (a). Print the total number of characters, words and lines in the file.
+
+INPUT:
+
+def charCounter(text):
+ count = 0
+ for c in text:
+  if c==" ":
+   continue
+  else:
+   count+=1
+
+ return count
+
+def wordCounter(text):
+ wordList=text.split(" ")
+ return len(wordList)
+
+#Opening File for Counting Characters and words
+f = open("C:\\Users\\ayush\\OneDrive\\Desktop\\pythonRc\\Practise session\\practical9Text.txt", 'r')
+
+file Textf.read()
+
+print("Total number of characters in this file is: ", charCounter(fileText))
+print("The total number of words present in the file is: ", wordCounter(file Text))
+
+f.close()
+
+#Closed file
+
+#Opening file for counting number of lines
+
+f= open("C:\\Users\\ayush\\OneDrive\\Desktop\\pythonRc\\Practise session\\practical9Text.txt", 'r')
+
+
+
+
+lineList = f.readlines()
+
+print("Total number of lines in this file is: ", len(lineList))
+
+f.close()
+
+#File Closed
+
+Output:
+
+Total number of characters in this file is: 407
+
+The total number of words present in the file is: 70
+
+Total number of lines in this file is: 5
